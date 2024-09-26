@@ -1,0 +1,46 @@
+@media (max-width: 1200px) {
+  /* NAVBAR */
+  .navbar {
+    padding: 0 20px;
+  }
+  .navbar .logo {
+    font-size: var(--fs-large);
+  }
+  .navbar .nav-links {
+    gap: 20px;
+  }
+  .navbar .nav-links .nav-link {
+    font-size: var(--fs-regular);
+  }
+  .navbar .nav-links .btn-login {
+    font-size: var(--fs-regular);
+    padding: 6px 12px;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero .content {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .hero .hero-image {
+    width: 100%;
+  }
+
+  /* FEATURES SECTION */
+  .features .feature-item h3 {
+    font-size: var(--fs-regular);
+  }
+  .features .feature-item p {
+    font-size: var(--fs-small);
+  }
+
+  /* TESTIMONIALS SECTION */
+  .testimonials .testimonial-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
