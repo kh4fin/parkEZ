@@ -78,9 +78,63 @@
   font-weight: var(--fw-bold);
 }
 
+@media (max-width: 1200px) {
+  .garage {
+    padding: 50px 30px;
+  }
+  .garage .garage-content {
+    font-size: var(--fs-regular);
+  }
+  .garage .garage-image .img {
+    max-width: 40%;
+  }
+  .garage .garage-image .img img {
+    width: 100%;
+    height: auto;
+  }
+  .garage .garage-desc {
+    max-width: 30%;
+    width: 100%;
+    font-size: var(--fs-small);
+  }
+
+  .ezgarage .image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media (max-width: 767px) {
   .about-stats {
     flex-direction: column;
     gap: 20px;
+  }
+  .garage {
+    flex-direction: column;
+  }
+  .garage .garage-content {
+    width: 100%;
+  }
+  .garage .garage-image {
+    flex-direction: column;
+    width: 100%;
+  }
+  .garage .garage-image .img {
+    width: 100%;
+  }
+  .garage .garage-image .img img {
+    height: auto;
+    width: 100%;
+  }
+  .garage .garage-image .garage-desc {
+    font-size: var(--fs-small);
+    width: 100%;
+  }
+
+  .ezgarage .image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
