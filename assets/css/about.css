@@ -37,6 +37,47 @@
   margin-top: 10px;
 }
 
+.garage {
+  background-color: var(--color-accent-dark);
+  color: var(--color-white);
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.garage .garage-content {
+  width: 30%;
+  font-size: var(--fs-xlarge);
+}
+.garage .garage-image {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.garage .garage-image .img {
+  width: 40%;
+}
+.garage .garage-image .garage-desc {
+  width: 30%;
+  font-size: var(--fs-regular);
+}
+
+.ezgarage {
+  background-color: var(--color-white);
+  color: var(--color-accent-dark);
+  padding: 20px 30px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.ezgarage h1 {
+  margin-top: 20px;
+  font-size: var(--fs-xlarge);
+  font-weight: var(--fw-bold);
+}
+
 @media (max-width: 767px) {
   .about-stats {
     flex-direction: column;
