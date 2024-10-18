@@ -1,6 +1,6 @@
 .pricing {
-  background-color: var(--color-secondary-dark);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-secondary-dark);
   padding: 100px 30px;
   text-align: center;
 }
@@ -13,6 +13,80 @@
 .section-description {
   font-size: var(--fs-regular);
   margin-bottom: 40px;
+}
+
+/* ======================= */
+.btn-slider {
+  position: relative;
+  width: 200px;
+  /* height: 40px; */
+  border: 1px solid var(--color-accent-dark);
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--color-accent-light);
+}
+
+.btn-slider .slider-circle {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  width: 80px;
+  height: 100%;
+  background-color: var(--color-white);
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+.btn-slider .slider-circle.active {
+  width: 120px;
+}
+
+.btn-slider .parkez,
+.btn-slider .ezgarage {
+  padding: 10px 10px;
+  font-weight: bold;
+  color: var(--color-accent-dark);
+  z-index: 1;
+}
+.btn-slider .ezgarage {
+  padding: 10px 15px;
+}
+
+.btn-slider .ezgarage {
+  text-align: right;
+}
+
+.ezgarage-content,
+.parkez-content {
+  display: none;
+}
+
+.parkez-content.active,
+.ezgarage-content.active {
+  display: block;
+}
+
+/* ======================= */
+.pricing .parkez-motor-title {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  justify-content: flex-start;
+  margin: 40px 0;
+}
+.pricing .parkez-motor-title > i {
+  font-size: 4rem;
+  color: var(--color-accent-hover);
+}
+.pricing .parkez-motor-title > .title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--color-accent-dark);
 }
 
 .pricing .pricing-cards {
