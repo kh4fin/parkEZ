@@ -27,6 +27,7 @@
   border: none;
   outline: none;
 }
+
 a {
   text-decoration: none;
   color: var(--color-secondary-dark);
@@ -56,10 +57,12 @@ body {
   padding-left: 100px;
   padding-right: 80px;
 }
+
 .navbar .logo {
   font-size: var(--fs-xlarge);
   font-weight: var(--fw-bold);
 }
+
 .navbar .logo span {
   color: var(--color-accent-light);
 }
@@ -70,11 +73,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .navbar .nav-links .nav-link {
   color: var(--color-secondary-dark);
   font-weight: var(--fw-medium);
   transition: 0.4s ease-in-out;
 }
+
 .navbar .nav-links .nav-link:hover {
   color: var(--color-accent-light);
 }
@@ -89,12 +94,14 @@ body {
   transition: all 0.4s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .navbar .nav-links .btn-login:hover {
   background-color: var(--color-accent-hover);
 
   transform: scale(1);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
 }
+
 .navbar .nav-extra {
   display: none;
 }
@@ -109,21 +116,25 @@ body {
   background-color: var(--color-white);
   width: 100%;
 }
+
 .hero .content {
   width: 50%;
 }
+
 .hero .h1 {
   font-size: var(--fs-xlarge);
   font-weight: var(--fw-bold);
   color: var(--color-secondary-dark);
   margin-bottom: 20px;
 }
+
 .hero p {
   font-size: var(--fs-regular);
   font-weight: var(--fs-medium);
   color: var(--color-secondary-dark);
   margin-bottom: 30px;
 }
+
 .hero .btn-cta {
   background-color: var(--color-accent-light);
   color: var(--color-white);
@@ -133,6 +144,7 @@ body {
   border-radius: 25px;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
 .hero .btn-cta:hover {
   background-color: var(--color-accent-hover);
   transform: scale(1.05);
@@ -141,6 +153,7 @@ body {
 .hero .hero-image {
   width: 50%;
 }
+
 .hero .hero-image img {
   width: 100%;
   height: auto;
@@ -181,7 +194,8 @@ body {
 }
 
 .about-content p {
-  color: var(--color-accent-light); /* Ganti warna teks */
+  color: var(--color-accent-light);
+  /* Ganti warna teks */
   font-size: var(--fs-regular);
   font-weight: var(--fw-regular);
   line-height: 1.6;
@@ -225,18 +239,21 @@ body {
   text-align: center;
   width: 100%;
 }
+
 .features h2 {
   font-size: var(--fs-xlarge);
   font-weight: var(--fw-bold);
   color: var(--color-secondary-dark);
   margin-bottom: 40px;
 }
+
 .features .feature-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-items: center;
 }
+
 .features .feature-item {
   background-color: var(--color-accent-dark);
   padding: 30px;
@@ -245,19 +262,23 @@ body {
   text-align: center;
   transition: 0.4s ease-in-out;
 }
+
 .features .feature-item:hover {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
 .features .feature-item i {
   font-size: 3rem;
   margin-bottom: 20px;
   color: var(--color-accent-light);
 }
+
 .features .feature-item h3 {
   font-size: var(--fs-large);
   font-weight: var(--fw-bold);
   margin-bottom: 15px;
 }
+
 .features .feature-item p {
   font-size: var(--fs-regular);
   font-weight: var(--fw-medium);
@@ -271,17 +292,20 @@ body {
   text-align: center;
   color: var(--color-white);
 }
+
 .testimonials h2 {
   font-size: var(--fs-xlarge);
   font-weight: var(--fw-bold);
   color: var(--color-white);
   margin-bottom: 50px;
 }
+
 .testimonials .testimonial-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 .testimonials .testimonial-item {
   background-color: var(--color-primary-dark);
   padding: 40px;
@@ -289,15 +313,18 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-in-out;
 }
+
 .testimonials .testimonial-item:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
 .testimonials .testimonial-item p {
   font-size: var(--fs-regular);
   font-style: italic;
   margin-bottom: 20px;
 }
+
 .testimonials .testimonial-item .customer-info {
   display: flex;
   align-items: center;
@@ -305,17 +332,20 @@ body {
   gap: 15px;
   margin-bottom: 20px;
 }
+
 .testimonials .testimonial-item .customer-info img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
+
 .testimonials .testimonial-item .customer-info h3 {
   font-size: var(--fs-medium);
   font-weight: var(--fw-bold);
   margin-bottom: 5px;
 }
+
 .testimonials .testimonial-item .customer-info span {
   font-size: var(--fs-small);
   font-weight: var(--fw-medium);
@@ -329,21 +359,25 @@ body {
   text-align: center;
   color: var(--color-white);
 }
+
 .cta .cta-content {
   max-width: 800px;
   height: auto;
   margin: 0 auto;
 }
+
 .cta .cta-content h2 {
   font-size: var(--fs-xlarge);
   font-weight: var(--fw-bold);
   margin-bottom: 10px;
 }
+
 .cta .cta-content p {
   font-size: var(--fs-regular);
   font-weight: var(--fw-medium);
   margin-bottom: 40px;
 }
+
 .cta .cta-content .btn-cta {
   margin-top: 20px;
   background-color: var(--color-white);
@@ -355,6 +389,7 @@ body {
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .cta .cta-content .btn-cta:hover {
   background-color: var(--color-accent-hover);
   color: var(--color-white);
@@ -363,7 +398,7 @@ body {
 
 /* Contact Section */
 #contact {
-  height: 100vh;
+  height: auto;
 }
 
 /* FOOTER SECTION */
@@ -373,6 +408,7 @@ body {
   padding: 50px 30px;
   text-align: center;
 }
+
 .footer .footer-content {
   display: flex;
   flex-direction: column;
@@ -380,41 +416,51 @@ body {
   gap: 30px;
   margin-bottom: 20px;
 }
+
 .footer .footer-content .footer-logo .logo {
   font-size: var(--fs-xlarge);
   font-weight: var(--fw-bold);
   color: var(--color-white);
 }
+
 .footer .footer-content .footer-logo .logo span {
   color: var(--color-accent-light);
 }
+
 .footer .footer-content .footer-links {
   display: flex;
   gap: 20px;
 }
+
 .footer .footer-content .footer-links a {
   color: var(--color-white);
   font-size: var(--fs-regular);
   transition: 0.3s ease;
 }
+
 .footer .footer-content .footer-links a:hover {
   color: var(--color-accent-light);
 }
+
 .footer .footer-content .footer-social {
   display: flex;
   gap: 15px;
 }
+
 .footer .footer-content .footer-social a {
   color: var(--color-white);
   font-size: var(--fs-larget);
   transition: 0.3s ease;
 }
+
 .footer .footer-content .footer-social a:hover {
   color: var(--color-accent-light);
 }
+
 .footer .footer-bottom {
   margin-top: 20px;
 }
+
 .footer .footer-bottom p {
   font-size: var(--fs-small);
   color: rgba(255, 255, 255, 0.8);
