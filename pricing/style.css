@@ -221,6 +221,7 @@
 #ezgarage {
     width: 100%;
     height: auto;
+    display: none;
 }
 
 #ezgarage .parkez-motor-title {
@@ -322,6 +323,13 @@
 }
 
 @media (max-width: 767px) {
+
+    .thumb-ezgarage,
+    .thumb-parkez {
+        height: 350px;
+        margin-bottom: 10px;
+    }
+
     .pricing-cards {
         flex-direction: column;
         align-items: center;
