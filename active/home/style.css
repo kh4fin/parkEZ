@@ -1,0 +1,731 @@
+.hero {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .container {
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.hero .hero-info {
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #ffffff, #f4f4f9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding: 1rem 0 0.2rem 0; */
+    padding-top: 1rem;
+}
+
+.hero .hero-info .welcome h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-accent-dark);
+    margin-bottom: 1rem;
+}
+
+.hero .hero-info .r {
+    width: 80%;
+    height: 2px;
+    background: #ddd;
+    margin: 2rem auto;
+}
+
+.hero .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.info .parkez,
+.info .ezgarage {
+    width: 45%;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+/* .info .parkez:hover,
+.info .ezgarage:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+} */
+
+.parkez .logo,
+.ezgarage .logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--color-accent-light);
+    margin-bottom: 0.5rem;
+}
+
+.parkez p,
+.ezgarage p {
+    font-size: 1rem;
+    color: var(--color-accent-dark);
+}
+
+.hero .container .iklan {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+    margin: 1rem 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hero .container .iklan img {
+    width: 100%;
+    height: auto;
+}
+
+/* Pricing */
+.pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    /* padding: 0 2rem; */
+}
+
+.pricing .pricing-nav {
+    display: none;
+}
+
+.pricing .parkez-pricing,
+.pricing .ezgarage-pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.pricing .parkez-pricing .header,
+.pricing .ezgarage-pricing .header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.pricing .parkez-pricing .header .left,
+.pricing .ezgarage-pricing .header .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.pricing .parkez-pricing .header .left .logo,
+.pricing .ezgarage-pricing .header .left .logo {
+    font-size: var(--fs-xlarge);
+    font-weight: var(--fw-bold);
+}
+
+.pricing .parkez-pricing .header .left .logo span,
+.pricing .ezgarage-pricing .header .left .logo span {
+    color: var(--color-accent-light);
+}
+
+
+.pricing .parkez-pricing .header .right,
+.pricing .ezgarage-pricing .header .right {
+    display: none;
+}
+
+.pricing .parkez-pricing .cards-2,
+.pricing .ezgarage-pricing .cards-2 {
+    display: none;
+}
+
+.pricing .parkez-pricing .cards,
+.pricing .ezgarage-pricing .cards {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #C8A24C;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.pricing .parkez-pricing .cards .card,
+.pricing .ezgarage-pricing .cards .card {
+    background-color: var(--color-white);
+    color: var(--color-primary-dark);
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.pricing .parkez-pricing .cards .card h3,
+.pricing .ezgarage-pricing .cards .card h3 {
+    font-size: var(--fs-large);
+    height: 10%;
+}
+
+.card .card-desc {
+    font-size: var(--fs-small);
+    height: 15%;
+}
+
+.card .discount {
+    padding-top: 10px;
+    width: 100%;
+    height: 10%;
+    font-size: var(--fs-small);
+    display: flex;
+    text-align: center;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .discount p:nth-child(1) {
+    text-decoration: line-through;
+    margin-top: 6px;
+}
+
+.card .discount p:nth-child(2) {
+    background-color: var(--color-accent-light);
+    color: var(--color-white);
+    padding: 6px 12px;
+    font-weight: var(--fs-medium);
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card .discount p:nth-child(2):hover {
+    background-color: var(--color-accent-hover);
+}
+
+.card .price {
+    padding-top: 10px;
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold);
+    color: var(--color-accent-light);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.card .checkout {
+    width: 100%;
+    height: 40px;
+    /* border-radius: 10px; */
+    /* border: 1px solid #1757ce; */
+    /* background-color: var(--color-white); */
+    text-align: center;
+}
+
+.card .checkout>a {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    color: #0095ff;
+    font-weight: var(--fw-bold);
+    border: 1px solid var(--color-primary-dark);
+    background-color: var(--color-white);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.card .checkout>a:hover,
+.card .checkout>a:active {
+    background-color: #0095ff;
+    color: var(--color-white);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card .r {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+
+/* Tablet */
+@media (max-width: 1200px) {
+
+    /* Pricing */
+    .pricing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* padding: 0 2rem; */
+    }
+
+    .pricing .parkez-pricing,
+    .pricing .ezgarage-pricing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .pricing .parkez-pricing .header,
+    .pricing .ezgarage-pricing .header {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+
+    .pricing .parkez-pricing .header .left,
+    .pricing .ezgarage-pricing .header .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .pricing .parkez-pricing .header .left .logo,
+    .pricing .ezgarage-pricing .header .left .logo {
+        font-size: var(--fs-xlarge);
+        font-weight: var(--fw-bold);
+    }
+
+    .pricing .parkez-pricing .header .left .logo span,
+    .pricing .ezgarage-pricing .header .left .logo span {
+        color: var(--color-accent-light);
+    }
+
+
+    .pricing .parkez-pricing .header .right,
+    .pricing .ezgarage-pricing .header .right {
+        display: none;
+    }
+
+    .pricing .parkez-pricing .cards-2,
+    .pricing .ezgarage-pricing .cards-2 {
+        display: none;
+    }
+
+    .pricing .parkez-pricing .cards,
+    .pricing .ezgarage-pricing .cards {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        background: #C8A24C;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .pricing .parkez-pricing .cards .card,
+    .pricing .ezgarage-pricing .cards .card {
+        background-color: var(--color-white);
+        color: var(--color-primary-dark);
+        padding: 5px 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 25%;
+        height: 450px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    .pricing .parkez-pricing .cards .card h3,
+    .pricing .ezgarage-pricing .cards .card h3 {
+        font-size: var(--fs-regular);
+        height: 10%;
+    }
+
+    .card .card-desc {
+        font-size: 12px;
+        height: 15%;
+    }
+
+    .card .discount {
+        padding-top: 10px;
+        width: 100%;
+        height: 10%;
+        font-size: 12px;
+        display: flex;
+        text-align: center;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card .discount p:nth-child(1) {
+        text-decoration: line-through;
+        margin-top: 6px;
+    }
+
+    .card .discount p:nth-child(2) {
+        background-color: var(--color-accent-light);
+        color: var(--color-white);
+        padding: 5px 6px;
+        font-weight: var(--fs-medium);
+        border-radius: 20px;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .card .discount p:nth-child(2):hover {
+        background-color: var(--color-accent-hover);
+    }
+
+    .card .price {
+        padding-top: 10px;
+        font-size: var(--fs-regular);
+        font-weight: var(--fw-bold);
+        color: var(--color-accent-light);
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .card .checkout {
+        width: 100%;
+        height: 40px;
+        /* border-radius: 10px; */
+        /* border: 1px solid #1757ce; */
+        /* background-color: var(--color-white); */
+        text-align: center;
+    }
+
+    .card .checkout>a {
+        display: block;
+        margin: 0 auto;
+        padding-top: 5px;
+        width: 80%;
+        height: 40px;
+        border-radius: 15px;
+        color: #0095ff;
+        font-weight: var(--fw-bold);
+        border: 1px solid var(--color-primary-dark);
+        background-color: var(--color-white);
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    .card .checkout>a:hover,
+    .card .checkout>a:active {
+        background-color: #0095ff;
+        color: var(--color-white);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card .r {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 10px auto;
+    }
+
+    .card ul {
+        padding-left: 20px;
+    }
+
+    .card ul li {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+/*  Mobile */
+@media (max-width: 767px) {
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero .container {
+        width: 90%;
+        padding: 0.3rem 0.3rem 0rem 0.3rem;
+    }
+
+    .hero .hero-info {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero .hero-info .welcome h1 {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .hero .hero-info .r {
+        margin: 0rem auto;
+    }
+
+    .hero .info {
+        margin-top: 0.5rem;
+    }
+
+    .info .parkez,
+    .info .ezgarage {
+        width: 49%;
+        padding: 0.4rem;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .parkez .logo,
+    .ezgarage .logo {
+        font-size: 14px;
+        margin-bottom: 0rem;
+    }
+
+    .parkez p,
+    .ezgarage p {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    /* pricing */
+    .pricing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        /* padding: 0 2rem; */
+    }
+
+    .pricing .ezgarage-pricing {
+        margin-top: 2rem;
+    }
+
+    .pricing .parkez-pricing,
+    .pricing .ezgarage-pricing {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .pricing .parkez-pricing .header,
+    .pricing .ezgarage-pricing .header {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+
+    .pricing .parkez-pricing .header .left,
+    .pricing .ezgarage-pricing .header .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .pricing .parkez-pricing .header .left .logo,
+    .pricing .ezgarage-pricing .header .left .logo {
+        font-size: var(--fs-medium);
+        font-weight: var(--fw-bold);
+    }
+
+    .pricing .parkez-pricing .header .left .logo span,
+    .pricing .ezgarage-pricing .header .left .logo span {
+        color: var(--color-accent-light);
+    }
+
+    .pricing .parkez-pricing .header .left>p,
+    .pricing .ezgarage-pricing .header .left>p {
+        display: none;
+        font-size: 8px;
+    }
+
+
+    .pricing .parkez-pricing .header .right,
+    .pricing .ezgarage-pricing .header .right {
+        display: block;
+        /* padding-top: 30px; */
+    }
+
+    .pricing .parkez-pricing .header .right .lihatSemua,
+    .pricing .ezgarage-pricing .header .right .lihatSemua {
+        color: var(--color-accent-light);
+        cursor: pointer;
+    }
+
+    .pricing .parkez-pricing .header .right .lihatSemua:hover,
+    .pricing .ezgarage-pricing .header .right .lihatSemua:hover {
+        color: var(--color-accent-hover);
+    }
+
+    .pricing .parkez-pricing .cards-2,
+    .pricing .ezgarage-pricing .cards-2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #C8A24C;
+        padding: 1rem 0.2rem;
+    }
+
+    .pricing .parkez-pricing .cards-2 .card,
+    .pricing .ezgarage-pricing .cards-2 .card {
+        background-color: var(--color-white);
+        color: var(--color-primary-dark);
+        padding: 5px 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        height: 450px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .pricing .parkez-pricing .cards,
+    .pricing .ezgarage-pricing .cards {
+        display: none;
+    }
+
+    .pricing .parkez-pricing .cards-2 .card h3,
+    .pricing .ezgarage-pricing .cards-2 .card h3 {
+        font-size: var(--fs-regular);
+        height: 10%;
+    }
+
+    .card .card-desc {
+        font-size: 10px;
+        height: 15%;
+    }
+
+    .card .discount {
+        padding-top: 10px;
+        width: 100%;
+        height: 10%;
+        font-size: var(--fs-small);
+        display: flex;
+        text-align: left;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card .discount p:nth-child(1) {
+        text-decoration: line-through;
+        margin-top: 6px;
+    }
+
+    .card .discount p:nth-child(2) {
+        background-color: var(--color-accent-light);
+        color: var(--color-white);
+        padding: 6px 8px;
+        font-weight: var(--fs-medium);
+        border-radius: 20px;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .card .discount p:nth-child(2):hover {
+        background-color: var(--color-accent-hover);
+    }
+
+    .card .price {
+        padding-top: 10px;
+        font-size: var(--fs-small);
+        font-weight: var(--fw-bold);
+        color: var(--color-accent-light);
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .card .checkout {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+
+    .card .checkout>a {
+        display: block;
+        margin: 0 auto;
+        padding-top: 6px;
+        font-size: var(--fs-regular);
+        width: 80%;
+        height: 40px;
+        border-radius: 15px;
+        color: #0095ff;
+        font-weight: var(--fw-bold);
+        border: 1px solid var(--color-primary-dark);
+        background-color: var(--color-white);
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    .card .checkout>a:hover,
+    .card .checkout>a:active {
+        background-color: #0095ff;
+        color: var(--color-white);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card .r {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 10px auto;
+    }
+
+    .card ul {
+        padding-left: 20px;
+    }
+
+    .card ul li {
+        /* list-style-type: ; */
+        list-style-type: circle;
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+}
