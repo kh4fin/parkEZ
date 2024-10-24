@@ -83,12 +83,13 @@
     margin-bottom: 20px;
 }
 
-.contact-info p {
+.contact-info .link {
     font-size: var(--fs-regular);
     margin-bottom: 15px;
+    display: block;
 }
 
-.contact-info p i {
+.contact-info .link i {
     margin-right: 10px;
 }
 
