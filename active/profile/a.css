@@ -1,0 +1,43 @@
+/* Tablet Styling */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        height: 80px;
+        font-size: 1.2rem;
+    }
+
+    .profile {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .profile .main {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        width: 30%;
+    }
+
+    .profile .main img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile .info {
+        text-align: center;
+    }
+
+    .profile .rows {
+        width: 70%;
+        padding: 0 1rem;
+    }
+
+    .profile .rows .row {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* Desktop Styling */
+@media (min-width: 1025px) {}
